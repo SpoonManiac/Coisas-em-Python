@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sua idade</title>
+  </head>
+  <body>
+    <h1>Sua idade é {{idade}}</h1>
+    
+    Suas proximas idades serão:
+    <ul>
+    {% for idade_futura in idades_depois %}
+        <li>{{idade_futura}}</li>
+    {% endfor %}
+    </ul>
+  </body>
+</html>
